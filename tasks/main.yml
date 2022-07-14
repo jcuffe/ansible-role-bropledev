@@ -1,6 +1,12 @@
 ---
 - name: install package dependencies
-  become: yes
+  become: true
   ansible.builtin.apt:
     package:
       - tree
+
+- name: install global npm packages
+  become: true
+  community.general.npm:
+    global: true
+    name: typescript-language-server
