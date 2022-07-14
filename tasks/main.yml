@@ -4,6 +4,7 @@
   ansible.builtin.apt:
     package:
       - tree
+      - node
 
 - name: install global npm packages
   become: true
