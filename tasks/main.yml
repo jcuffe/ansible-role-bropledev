@@ -1,0 +1,6 @@
+---
+- name: install package dependencies
+  become: yes
+  ansible.builtin.apt:
+    package:
+      - tree
