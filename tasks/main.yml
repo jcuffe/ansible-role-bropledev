@@ -4,7 +4,7 @@
   ansible.builtin.apt:
     package:
       - tree
-      - nodejs
+      - docker.io
 
 - name: install global npm packages
   community.general.npm:
